@@ -4,32 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Profile card component</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!--<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-</style> -->
 </head>
 <body>
-  Victor Crest
-  26
-  London
+    <div class="bg">
+        <img class="bg-top" src="images/bg-pattern-top.svg">
+        <img class="bg-bottom" src="images/bg-pattern-bottom.svg">
+        <!-- <object class="bg-top" data="images/bg-pattern-top.svg"> </object>
+        <object class="bg-bottom" data="images/bg-pattern-bottom.svg"> </object> -->
 
-  80K
-  Followers
+        <div class="card">
+          <div class="card-top">
+            <div class="card-img-frame">
+              <div class="card-img">
+              </div>
+            </div>
+          </div>
+          <div class="card-name-age">
+            <h1>
+              Victor Crest <span class="card-age">26</span>
+            </h1>
+            <h2>London</h2>
+            <hr>
+            <div class="card-stats">
+              <div class="stats">
+                <h1>80K</h1>
+                <h3>Followers</h3>
+              </div>
+              <div class="stats">
+               <h1> 803K</h1>
+                <h3>Likes</h3>
+              </div>
+              <div class="stats">
+                <h1>1.4K</h1>
+                <h3>Photos</h3>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">William Spanfelner</a>.
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://will-1-am.github.io">William Spanfelner</a>.
+      </div>
   </div>
 </body>
 </html>
