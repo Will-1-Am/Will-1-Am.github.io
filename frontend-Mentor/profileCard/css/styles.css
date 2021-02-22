@@ -2,8 +2,7 @@ body {
     margin: 0;
     font-family: Kumbh Sans, sans-serif;
     text-align: center;
-    width: 1440px;
-    height: 720px;
+    /* min-height: 100vh; */
 }
 
 .attribution {
@@ -18,10 +17,12 @@ body {
 }
 
 .bg {
+    margin: 0;
     background-color: hsl(185, 75%, 39%);
     width: 1440px;
     height: 720px;
     position: relative;
+    overflow: hidden;
 }
 
 .bg-top {
@@ -69,15 +70,16 @@ hr {
 }
 
 .card {
-  margin: 100px auto;
+  margin: auto;
+  margin-top: auto;
   background-color: #fff;
   width: 340px;
   height: 360px;
   border: 1px;
   border-color: hsl(227, 10%, 46%);
   border-radius: 15px;
-  position: relative;
-  top: 180px;
+  position: absolute;
+  transform: translate(160%, 50%);
   border-color: hsl(229, 23%, 23%);
   border-width: medium;
 }
@@ -96,9 +98,11 @@ hr {
   height: 104px;
   border-radius: 52px;
   background-color: #fff;
+  margin: 0 auto;
   position: absolute;
-  left: 35%;
-  top: 24%;
+  transform: translate(112%, -48%);
+  /* left: 35%;
+  top: 24%; */
 }
 
 .card-img {
@@ -106,9 +110,9 @@ hr {
   height: 95px;
   border-radius: 47.5px;
   background: url('../images/image-victor.jpg');
+  margin: 3.5;
   position: absolute;
-  left: 4.5%;
-  top: 5%;
+  transform: translate(4.5%, 4.5%);
 }
 
 .card-name-age {
