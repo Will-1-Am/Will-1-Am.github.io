@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Kumbh Sans, sans-serif;
+    text-align: center;
+    /* min-height: 100vh; */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 700px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.bg {
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    width: 1440px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-top {
+    position: absolute;
+    right: 750px;
+    bottom: 250px;
+}
+
+.bg-bottom {
+    position: absolute;
+    left: 725px;
+    top: 350px;
+}
+
+h1 {
+  margin: 0;
+  font-family: Kumbh Sans, Helvetica Neue, Avenir Next, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 6px 0;
+  font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 0.08rem;
+}
+
+hr {
+  margin: 0;
+  height: 0.01rem;
+  border: none;
+  border-top: 2px solid #EAF6F6;
+}
+
+.card {
+  margin: auto;
+  margin-top: auto;
+  background-color: #fff;
+  width: 340px;
+  height: 360px;
+  border: 1px;
+  border-color: hsl(227, 10%, 46%);
+  border-radius: 15px;
+  position: absolute;
+  transform: translate(160%, 50%);
+  border-color: hsl(229, 23%, 23%);
+  border-width: medium;
+}
+
+.card-top {
+  background: url('../images/bg-pattern-card.svg');
+  width: 100%;
+  height: 38%;
+  border-radius: 15px 15px 0 0;
+  border-color: hsl(229, 23%, 23%);
+  border-width: medium;
+}
+
+.card-img-frame {
+  width: 104px;
+  height: 104px;
+  border-radius: 52px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(112%, -48%);
+  /* left: 35%;
+  top: 24%; */
+}
+
+.card-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 47.5px;
+  background: url('../images/image-victor.jpg');
+  margin: 3.5;
+  position: absolute;
+  transform: translate(4.5%, 4.5%);
+}
+
+.card-name-age {
+  margin: 22% auto;
+}
+
+.card-age {
+  font-family: Kumbh Sans, Helvetica Neue Thin, sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.stats {
+  display: inline-block;
+  margin: 22.5px;
+}

@@ -1,131 +1,156 @@
+a {
+    color: hsl(228, 45%, 44%);
+}
+
 body {
     margin: 0;
-    font-family: Kumbh Sans, sans-serif;
+    font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
     text-align: center;
-    /* min-height: 100vh; */
+}
+
+h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+h2, h3 {
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 2px solid #EAF6F6;
 }
 
 .attribution {
     font-size: 11px;
-    text-align: center;
     position: absolute;
-    top: 700px;
+    left: 5px;
+    bottom: 5px;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
+/* svg background */
 .bg {
-    margin: 0;
     background-color: hsl(185, 75%, 39%);
-    width: 1440px;
-    height: 720px;
+
+    min-width: 375px;
+    min-height: 667px;
+
     position: relative;
     overflow: hidden;
 }
 
 .bg-top {
     position: absolute;
-    right: 750px;
-    bottom: 250px;
+    right: 42%;
+    bottom: 44%;
 }
 
 .bg-bottom {
     position: absolute;
-    left: 725px;
-    top: 350px;
+    left: 35%;
+    top: 47%;
 }
 
-h1 {
-  margin: 0;
-  font-family: Kumbh Sans, Helvetica Neue, Avenir Next, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
+/* for width 480px and larger */
+@media only screen and (min-width: 480px) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+
+    .bg-top {
+        position: absolute;
+        right: 52%;
+        bottom: 32%;
+    }
+
+    .bg-bottom {
+        position: absolute;
+        left: 48%;
+        top: 52%;
+    }
 }
 
-h2 {
-  margin: 10px 0;
-  font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: hsl(0, 0%, 59%);
-  padding-bottom: 10px;
+
+/* Profile card */
+.profileCard {
+    width: 340px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 15px;
+
+    /* Center card horizontally and vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
-h3 {
-  margin: 6px 0;
-  font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 400;
-  color: hsl(0, 0%, 59%);
-  letter-spacing: 0.08rem;
+.profileCard-top {
+    background: url('../images/bg-pattern-card.svg');
+    width: 100%;
+    height: 38%;
+    border-radius: 15px 15px 0 0;
+    border-color: hsl(229, 23%, 23%);
+    border-width: medium;
 }
 
-hr {
-  margin: 0;
-  height: 0.01rem;
-  border: none;
-  border-top: 2px solid #EAF6F6;
+.profileCard-img-frame {
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(112%, -50%);
 }
 
-.card {
-  margin: auto;
-  margin-top: auto;
-  background-color: #fff;
-  width: 340px;
-  height: 360px;
-  border: 1px;
-  border-color: hsl(227, 10%, 46%);
-  border-radius: 15px;
-  position: absolute;
-  transform: translate(160%, 50%);
-  border-color: hsl(229, 23%, 23%);
-  border-width: medium;
+.profileCard-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 47.5px;
+    background: url('../images/image-victor.jpg');
+    margin: 3.5;
+    position: absolute;
+    transform: translate(4.5%, 4.5%);
 }
 
-.card-top {
-  background: url('../images/bg-pattern-card.svg');
-  width: 100%;
-  height: 38%;
-  border-radius: 15px 15px 0 0;
-  border-color: hsl(229, 23%, 23%);
-  border-width: medium;
+/* name, age, city section  */
+.profileCard-name-age-city {
+    margin: 22% auto 0;
 }
 
-.card-img-frame {
-  width: 104px;
-  height: 104px;
-  border-radius: 52px;
-  background-color: #fff;
-  margin: 0 auto;
-  position: absolute;
-  transform: translate(112%, -48%);
-  /* left: 35%;
-  top: 24%; */
+.age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
 }
 
-.card-img {
-  width: 95px;
-  height: 95px;
-  border-radius: 47.5px;
-  background: url('../images/image-victor.jpg');
-  margin: 3.5;
-  position: absolute;
-  transform: translate(4.5%, 4.5%);
+.city {
+    margin: 10px 0;
+    font-size: 0.85rem;
+    padding-bottom: 10px;
 }
 
-.card-name-age {
-  margin: 22% auto;
+/* Stats section */
+.profileCard-stats {
+    margin: 12px auto;
 }
 
-.card-age {
-  font-family: Kumbh Sans, Helvetica Neue Thin, sans-serif;
-  font-weight: 400;
-  color: hsl(0, 0%, 59%);
+.stat {
+    display: inline-block;
+    margin: 0 22.5px;
 }
 
-.stats {
-  display: inline-block;
-  margin: 22.5px;
+.stat h1 {
+    margin-bottom: 0;
+}
+
+.stat-caption {
+    margin-top: 0.4rem;
+    letter-spacing: 0.08rem;
 }

@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Profile card component</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
+
 <body>
     <div class="bg">
         <img class="bg-top" src="images/bg-pattern-top.svg">
         <img class="bg-bottom" src="images/bg-pattern-bottom.svg">
         <!-- <object class="bg-top" data="images/bg-pattern-top.svg"> </object>
         <object class="bg-bottom" data="images/bg-pattern-bottom.svg"> </object> -->
+        <div class="profileCard">
+            <div class="profileCard-top"></div>
 
-        <div class="card">
-          <div class="card-top"></div>
-          
-          <div class="card-img-frame">
-            <div class="card-img"></div>
-          </div>
-
-          <div class="card-name-age">
-            <h1>
-              Victor Crest <span class="card-age">26</span>
-            </h1>
-            <h2>London</h2>
-            <hr>
-            <div class="card-stats">
-              <div class="stats">
-                <h1>80K</h1>
-                <h3>Followers</h3>
-              </div>
-              <div class="stats">
-               <h1> 803K</h1>
-                <h3>Likes</h3>
-              </div>
-              <div class="stats">
-                <h1>1.4K</h1>
-                <h3>Photos</h3>
-              </div>
+            <div class="profileCard-img-frame">
+                <div class="profileCard-img"></div>
             </div>
-          </div>
+
+            <div class="profileCard-name-age-city">
+                <h1>Victor Crest <span class="age">26</span>
+                </h1>
+                <h2 class="city">London</h2>
+            </div>
+            <hr>
+            <div class="profileCard-stats">
+                    <div class="stat">
+                        <h1>80K</h1>
+                        <h3 class="stat-caption">Followers</h3>
+                    </div>
+                    <div class="stat">
+                        <h1>803K</h1>
+                        <h3 class="stat-caption">Likes</h3>
+                    </div>
+                    <div class="stat">
+                        <h1>1.4K</h1>
+                        <h3 class="stat-caption">Photos</h3>
+                    </div>
+                </div>
         </div>
 
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://will-1-am.github.io">William Spanfelner</a>.
-      </div>
-  </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://will-1-am.github.io">William Spanfelner</a>.
+        </div>
+    </div>
 </body>
+
 </html>
