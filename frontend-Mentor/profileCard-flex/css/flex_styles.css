@@ -71,7 +71,7 @@ h3 {
 .bg-content::before {
     background: url("../images/bg-pattern-top.svg");
     background-position: bottom right;
-    /* Remove this element from the doc and position it top left and ensure that it maintains its stack position */
+    /* Remove this element from the doc and position it bottom right such that the image's bottom right corner coincides with that of the viewport */
     top: 0;
     left: 0;
 }
@@ -79,7 +79,7 @@ h3 {
 .bg-content::after {
     background: url("../images/bg-pattern-bottom.svg");
     background-position: top left;
-    /* Remove this element from the doc and position it bottom right and ensure that it maintains its stack position */
+    /* Remove this element from the doc and position it top left such that the previous image's bottom right corner coincides with the top left of this image - ie 100% from the top and 100% from the left edge */
     top: 100%;
     left: 100%;
 }
