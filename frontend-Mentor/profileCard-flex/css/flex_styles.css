@@ -1,0 +1,201 @@
+* {
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%); /* dark grey */
+}
+
+a {
+    font-size: 12px;
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    font-family: Kumbh Sans, Helvetica Neue Light, Avenir Next, sans-serif;
+    background-color: #19a2ae;
+
+    text-align: center;
+
+    background: url("../images/bg-pattern-top-bottom-consolidated.svg") no-repeat, #19a2ae;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 700;
+    color: #000;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 10px;
+    letter-spacing: 0.08rem;
+}
+
+.bg-content {
+    /* The entire viewport height is the area to cover with the background images*/
+    min-height: 100vh;
+
+    /* The browser will calculate the height */
+    height: auto;
+
+    /* make children flex items */
+    display: flex;
+    flex-flow: column;
+
+    /* position the bg-content relative to itself with no offset */
+    position: relative;
+
+    /* create a stack with the background content behind its children */
+    z-index: -1;
+
+    /* restrict background content to the viewport */
+    overflow: hidden;
+    background-color: #26919d;
+}
+
+.bg-content::before, .bg-content::after {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+
+    transform: translate(-50%, -50%);
+}
+
+.bg-content::before {
+    background: url("../images/bg-pattern-top.svg");
+    background-position: bottom right;
+    /* Remove this element from the doc and position it top left and ensure that it maintains its stack position */
+    top: 0;
+    left: 0;
+}
+
+.bg-content::after {
+    background: url("../images/bg-pattern-bottom.svg");
+    background-position: top left;
+    /* Remove this element from the doc and position it bottom right and ensure that it maintains its stack position */
+    top: 100%;
+    left: 100%;
+}
+
+
+.profileCard-parent {
+    /* Add any remaining space to the card using flex-grow factor 1 */
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileCard {
+    background-color: #fff;
+
+    border: hsl(185, 75%, 39%) solid thin;
+    border-radius: 1rem;
+
+    position: relative;
+    width: 100%;
+    max-width: 20rem; /* max-width: 350px; */
+
+    box-shadow: 10px 5px 100px hsl(195, 75%, 39%);
+}
+
+.profileCard-top {
+    background: url("../images/bg-pattern-card.svg") #19a2ae;
+
+    height: 142px;
+    border-radius: 1rem 1rem 0 0;
+
+    border-bottom: hsl(185, 75%, 39%) solid thin;
+
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profileCard-img {
+    background: url("../images/image-victor.jpg") #19a2ae;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    border: 5px #fff solid;
+    margin: -16%;
+}
+
+.profileCard-mid {
+    display: flex;
+    flex-flow: column;
+}
+
+.profileCard-name-age-city {
+    margin: 65px 105px;
+    margin-bottom: 0;
+}
+
+.city {
+    padding-bottom: 15px;
+}
+
+.profileCard-bottom {
+    display: flex;
+    flex-flow: row;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+    border-top: 1px solid lightgrey;
+}
+
+.stat h1 {
+    margin-bottom: 0;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 20px;
+    /* min-height: 100vh; */
+}
+
+
+
+/* The following classes were replaced by flex implementation in .profileCard-top & .profileCard-img */
+/*.profileCard-img-frame {
+    /* This code works */
+    /* width: 106px;
+    height: 106px;
+    margin: -53px auto;
+    background-color: #fff;
+
+    border-radius: 53px; */
+}*/
+
+
+/*.profileCard-img {
+    /* This code works */
+    /* background: url("../images/image-victor.jpg"); */
+    /* width: 96px;
+    height: 96px;
+
+    margin: 5px auto;
+    border-radius: 48px; */
+    /* This code works */
+
+    /* Below is trial code */
+    /* border-radius: 100%;
+    bottom: 25px;
+    border: 7px solid #fff;
+    margin: 0 auto;
+    position: relative; */
+}*/

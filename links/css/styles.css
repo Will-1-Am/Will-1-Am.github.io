@@ -1,0 +1,35 @@
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4d160;
+}
+
+#title {
+    background-color: #28527a;
+    color: #fff;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 10px #fff;
+    color: #fff;
+    overflow: visible;
+    height: 10px;
+}
+
+.header-navbar {
+    padding: 0 2.5rem;
+    /* padding: 3% 15%; */
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.list-box {
+    padding: 1.5rem;
+}
