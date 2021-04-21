@@ -1,0 +1,141 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --opaque-white: hsla(0, 0%, 100%, 1);
+}
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-gray);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--opaque-white);
+    padding: 1rem 2rem;
+}
+
+strong {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p .car-type-heading {
+    padding: 0 0 1.5rem 0;
+}
+
+.car-type-description {
+    color: var(--transparent-white);
+    line-height: 1.5rem;
+    padding: 2rem 0;
+}
+
+.cards {
+    /* Mobile design < 375px wide */
+    min-width: 22rem;
+    max-width: 70vw;
+    margin: 3rem auto;
+
+    display: grid;
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 3rem;
+}
+
+@media (min-width: 376px) {
+    .cards {
+        /* Prevent button text going to multiple lines add min-width */
+        min-width: 800px;
+        max-width: 920px;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        max-width: 22rem;
+    }
+
+    .centering-wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .car-type-description {
+        padding-bottom: 5.5rem;
+    }
+}
+
+.icon {
+    padding: 2.5rem;
+}
+
+.card button:hover {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.sedans, .sedans button:hover  {
+    background-color: var(--bright-orange);
+}
+
+.sedans .icon {
+    background: url('../images/icon-sedans.svg') no-repeat;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.suvs, .suvs button:hover {
+    background-color: var(--dark-cyan);
+}
+
+.suvs .icon {
+    background: url('../images/icon-suvs.svg') no-repeat;
+}
+
+.suvs button {
+    color: var(--dark-cyan);
+}
+
+.luxury, .luxury button:hover {
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury .icon {
+    background: url('../images/icon-luxury.svg') no-repeat;
+}
+
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    font-size: 0.73333rem;
+    text-align: center;
+    color: #000;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
