@@ -1,67 +1,72 @@
-a {
-    text-decoration: none;
+:root {
+    --lime-green-transparent: hsla(100, 100%, 60%, 0.8);
+    --lime-green: #77FF33;
+    --dark-lime-green: #11999E;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     font-family: Futura, sans-serif;
-    padding: 2.5rem;
-    color: white;
 }
 
 body {
-    margin: 0;
-    background-color: red;
+    /* min-width: 22rem;
+    max-width: 70vw; */
+    background-color: lightblue;
     background: url('../images/bg.svg');
-    /* width: 1440px;
-    height: 720px; */
+    padding: 0 1rem;
 }
 
 h1 {
-    margin: 0;
     font-family: sans-serif;
-    /* padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px; */
+    font-size: 2.8rem;
+    padding: 5rem 0 0.5rem;
+}
+
+@@supports (-webkit-text-stroke: 0.5px var(--lime-green)) {
+    h1 {
+        -webkit-text-stroke: 0.5px var(--lime-green)
+    }
 }
 
 h2 {
-    font-family: Futura, sans-serif;
-    color: #fff;
-    margin-bottom: 0;
-    padding: 2rem 2rem 0.5rem;
+    color: var(--white);
 }
 
-.navbar {
-    padding: 0 0 4.5rem;
+li {
+    padding-bottom: 1rem;
 }
 
-.title-h1 {
-    color: #fff;
-}
-
-.title-navbar {
-    /* background-color: #77FF33 #74f6a7 #82F748 #F7B13B #E0D136; */
-    background-color: #489cc1;
+ul {
+    padding: 0.5rem 2.5rem;
+    list-style: none;
 }
 
 .cat-container {
-    /*padding: 50px 0 20px 0;*/
+    padding-top: 2rem;
 }
 
 .cat-container a {
-    /*position: relative;
-    top: 50px;*/
     text-decoration: none;
     font-size: 1rem;
     font-weight: 100;
-    color: #11999E;
-    margin: 0;
-    padding: 2.5rem;
+    color: var(--dark-lime-green);
 }
 
 .cat-container a:hover {
-    color: #77FF33;
+    color: var(--lime-green);
     /* transition: all 0.5s ease; */
 }
 
-.category {
-    /*display: inline-block;*/
+.top-container {
+    border-bottom: solid var(--lime-green) 0.3rem;
+    /* background-color: #fff; */
+}
+
+.top-container span {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    color: var(--lime-green-transparent);
 }
