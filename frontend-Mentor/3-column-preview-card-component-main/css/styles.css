@@ -34,10 +34,6 @@ h2 {
     text-transform: uppercase;
 }
 
-p .car-type-heading {
-    padding: 0 0 1.5rem 0;
-}
-
 .car-type-description {
     color: var(--transparent-white);
     line-height: 1.5rem;
