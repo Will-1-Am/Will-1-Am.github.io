@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--very-light-gray);
+}
+
 html {
     font-size: 15px;
     font-weight: normal;
@@ -24,7 +28,7 @@ button {
     font-size: 1rem;
     border-radius: 2rem;
     border: 2px solid var(--very-light-gray);
-    background-color: var(--opaque-white);
+    background-color: var(--very-light-gray);
     padding: 1rem 2rem;
 }
 
