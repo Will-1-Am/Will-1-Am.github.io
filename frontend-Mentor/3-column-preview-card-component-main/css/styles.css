@@ -24,14 +24,6 @@ html {
     font-weight: normal;
 }
 
-button {
-    font-size: 1rem;
-    border-radius: 2rem;
-    border: 2px solid var(--very-light-gray);
-    background-color: var(--very-light-gray);
-    padding: 1rem 2rem;
-}
-
 h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.5rem;
@@ -44,6 +36,21 @@ h2 {
     padding: 2rem 0;
 }
 
+.card {
+    padding: 3rem;
+}
+
+.card .button {
+    display: inline-block;
+    text-decoration: none;
+    border: solid 1px transparent;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    padding: 1rem 2rem;
+}
+
 .cards {
     /* Mobile design < 375px wide */
     min-width: 22rem;
@@ -54,10 +61,6 @@ h2 {
 
     border-radius: 0.5rem;
     overflow: hidden;
-}
-
-.card {
-    padding: 3rem;
 }
 
 @media (min-width: 376px) {
@@ -90,12 +93,12 @@ h2 {
     padding: 2.5rem;
 }
 
-.card button:hover {
+.card .button:hover {
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
 }
 
-.sedans, .sedans button:hover  {
+.sedans, .sedans .button:hover  {
     background-color: var(--bright-orange);
 }
 
@@ -103,11 +106,11 @@ h2 {
     background: url('../images/icon-sedans.svg') no-repeat;
 }
 
-.sedans button {
+.sedans .button {
     color: var(--bright-orange);
 }
 
-.suvs, .suvs button:hover {
+.suvs, .suvs .button:hover {
     background-color: var(--dark-cyan);
 }
 
@@ -115,11 +118,11 @@ h2 {
     background: url('../images/icon-suvs.svg') no-repeat;
 }
 
-.suvs button {
+.suvs .button {
     color: var(--dark-cyan);
 }
 
-.luxury, .luxury button:hover {
+.luxury, .luxury .button:hover {
     background-color: var(--very-dark-cyan);
 }
 
@@ -127,7 +130,7 @@ h2 {
     background: url('../images/icon-luxury.svg') no-repeat;
 }
 
-.luxury button {
+.luxury .button {
     color: var(--very-dark-cyan);
 }
 
