@@ -53,9 +53,10 @@ h2 {
 
 .cards {
     /* Mobile design < 375px wide */
-    min-width: 22rem;
-    max-width: 70vw;
-    margin: 3rem auto;
+    /* Reduce min-width from 22rem to accomodate small screens */
+    min-width: 20rem;
+    max-width: 88vw;
+    margin: 4rem auto;
 
     display: grid;
 
@@ -63,10 +64,10 @@ h2 {
     overflow: hidden;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 750px) {
     .cards {
         /* Prevent button text going to multiple lines add min-width */
-        min-width: 800px;
+        min-width: 700px;
         max-width: 920px;
 
         grid-template-columns: repeat(3, 1fr);
@@ -82,6 +83,8 @@ h2 {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        /* stop the cards going right to the edge of viewport */
+        margin: 0 1rem;
     }
 
     .car-type-description {
