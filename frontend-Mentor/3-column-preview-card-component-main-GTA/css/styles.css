@@ -1,0 +1,150 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --opaque-white: hsla(0, 0%, 100%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-gray);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+}
+
+html {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.car-type-heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.car-type-description {
+    color: var(--transparent-white);
+    line-height: 1.5rem;
+}
+
+.card {
+    /* padding: 3rem; */
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head"
+                         "heading"
+                         "desc"
+                         "button";
+    grid-template-rows: 8rem 5rem auto 6rem;
+}
+
+.card > .icon {
+    grid-area: head;
+    padding: 3rem;
+    /* background-color: red; */
+}
+.card > .car-type-heading {
+    grid-area: heading;
+    padding: 0 3rem;
+    /* background-color: white; */
+}
+.card > .car-type-description {
+    grid-area: desc;
+    padding: 0 3rem 3rem;
+    /* background-color: grey; */
+}
+
+.card > .lm-button {
+    grid-area: button;
+    padding: 0.5rem 0 0 3rem;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    padding: 1rem 2rem;
+}
+
+.cards {
+    /* Mobile design < 375px wide */
+    /* Reduce min-width from 22rem to accomodate small screens */
+    min-width: 20rem;
+    max-width: 88vw;
+    margin: 4rem auto;
+
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+@media (min-width: 50rem) {
+    .cards {
+        /* Prevent button text going to multiple lines add min-width */
+        min-width: 47rem;
+        max-width: 61rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .centering-wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        /* stop the cards going right to the edge of viewport */
+        margin: 0 1rem;
+    }
+
+    .card > .car-type-description {
+        padding: 0 3rem 7rem;
+    }
+}
+
+.card .button:hover {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.sedans, .sedans .button:hover  {
+    background-color: var(--bright-orange);
+}
+
+.sedans .button {
+    color: var(--bright-orange);
+}
+
+.suvs, .suvs .button:hover {
+    background-color: var(--dark-cyan);
+}
+
+.suvs .button {
+    color: var(--dark-cyan);
+}
+
+.luxury, .luxury .button:hover {
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury .button {
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    font-size: 0.73333rem;
+    text-align: center;
+    color: #000;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
