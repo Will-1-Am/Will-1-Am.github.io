@@ -76,6 +76,8 @@
 .google-button {
   color: var(--white);
   background-color: var(--google-blue);
+  text-align: center;
+  text-decoration: none;
   flex: 9;
   padding: 1rem;
 }
@@ -111,10 +113,6 @@
   border-radius: 0.5rem;
 }
 
-.sub-button {
-    padding-top: 1rem;
-}
-
 fieldset {
   border: none;
   padding: 1rem 0;
@@ -132,10 +130,18 @@ label, a {
   font-size: 1.25rem;
 }
 
+.sub-button {
+    margin-top: 1rem;
+
+    display: flex;
+}
+
 .submit-entry-button {
   background-color: var(--wine);
   color: var(--white);
 
+  text-align: center;
+  text-decoration: none;
   line-height: 1.5;
   font-size: 1.25rem;
 
