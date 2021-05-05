@@ -1,0 +1,181 @@
+:root {
+  --white: #fff;
+  --dark-grey: #444;
+  --grey: #5b5a67;
+  --light-grey: #ccc;
+  --very-light-grey: #efefef;
+  --google-blue: #3570f5;
+  --wine: #b32955;
+  --lime-green: #54ff66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Entire sign-up page container */
+.main-container {
+  min-width: 20rem;
+}
+
+/* Top or left section with headings */
+.left {
+  background: var(--wine);
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.left .headings {
+  padding: 3rem 0.5rem 2rem;
+}
+
+.left .heading {
+  font-family: serif;
+  font-size: 1.5rem;
+  color: var(--lime-green);
+}
+
+.left .subheading {
+  font-size: 1.75rem;
+
+  padding-top: 0.5rem;
+}
+
+
+/* Right/bottom content - buttons and form */
+.right {
+  background-color: var(--very-light-grey);
+}
+
+.right .content {
+  padding: 1rem 0.5rem;
+}
+
+.right .heading {
+  color: var(--dark-grey);
+  font-size: 1.75rem;
+}
+
+.right .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.google-button, .twitter-button {
+  border: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+
+  border-radius: 0.5rem;
+}
+
+.google-button {
+  color: var(--white);
+  background-color: var(--google-blue);
+  flex: 9;
+  padding: 1rem;
+}
+
+.twitter-button {
+  color: var(--grey);
+  background-color: var(--light-grey);
+  flex: 0;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.twitter-button i {
+  flex: 1 auto;
+  text-align: center;
+}
+
+.twitter-button:hover {
+  color: var(--google-blue);
+}
+
+.divider {
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.sub-button {
+    padding-top: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  min-width: 100%;
+}
+
+label, a {
+  color: var(--very-light-grey);
+}
+
+.text-input {
+  min-width: 100%;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.submit-entry-button {
+  background-color: var(--wine);
+  color: var(--white);
+
+  line-height: 1.5;
+  font-size: 1.25rem;
+
+  border-radius: 0.5rem;
+  padding: 1rem 5rem;
+  width: 100%;
+}
+
+.captcha-text, .captcha-text a {
+  color: var(--grey);
+  padding-top: 1rem;
+}
+
+.main-with-credits {
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution, .attribution a {
+    font-size: 0.73333rem;
+    line-height: 3rem;
+    text-align: center;
+    color: var(--very-light-grey);
+    background-color: var(--dark-grey);
+}
+
+@media (min-width: 50rem) {
+    .main-container {
+      min-height: 100vh;
+      display: flex;
+    }
+
+    .left {
+        min-width: 20rem;
+        max-width: 40vw;
+        flex: 4 auto;
+    }
+
+    .right .content {
+        padding: 3rem 0.5rem;
+        flex: 6 auto;
+    }
+}
