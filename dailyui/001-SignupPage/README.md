@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001 - SignupPage](https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001 - SignupPage)
-- Live Site URL: [https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001 - SignupPage/index.html](https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001 - SignupPage/index.html)
+- Solution URL: [https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001-SignupPage](https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001-SignupPage)
+- Live Site URL: [https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001-SignupPage/index.html](https://github.com/Will-1-Am/Will-1-Am.github.io/tree/master/dailyui/001-SignupPage/index.html)
 
 ## My process
 
